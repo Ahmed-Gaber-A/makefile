@@ -1,11 +1,12 @@
 cc=gcc
-vpath %.c ./Src
-INCLUDE_PATH=./Inc
+vpath %.c ./src
+INCLUDE_PATH=./inc
 DEP = ./Dependencies
 Object_Files = DIO.o LCD.o main.o bobpo-ekram-abdelkader-samir.o
 Clean_Target = $(Object_Files) app.exe
 
-%.o: %.c
+
+%.o: %.c 
 	$(cc) -c -I$(INCLUDE_PATH) $<  -o $@
 	
 	

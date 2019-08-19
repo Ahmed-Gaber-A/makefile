@@ -7,7 +7,7 @@ Clean_Target = DIO.o LCD.o main.o app.exe
 
 
 %.o: %.c 
-	$(cc) -c -I$(INCLUDE_PATH) $<  -o $@
+	$(cc) -c -MD -I$(INCLUDE_PATH) $<  -o $@
 	
 	
 app.exe:	$(Object_Files)
@@ -15,3 +15,4 @@ app.exe:	$(Object_Files)
 
 clean: $(Clean_Target)
 	del $(Clean_Target)
+

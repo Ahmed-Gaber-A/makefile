@@ -3,7 +3,7 @@ vpath %.c ./src
 INCLUDE_PATH=./inc
 DEP = ./Dependencies
 Object_Files = DIO.o LCD.o main.o bobpo-ekram-abdelkader-samir.o
-Clean_Target = $(Object_Files) app.exe
+Clean_Target = DIO.o LCD.o main.o app.exe
 
 
 %.o: %.c 

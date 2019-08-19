@@ -1,6 +1,6 @@
+cc=gcc
 vpath %.c ./src
 INCLUDE_PATH=./inc
-cc=gcc
 Object_Files = DIO.o LCD.o main.o bobpo-ekram-abdelkader-samir.o
 
 

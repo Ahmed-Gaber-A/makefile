@@ -11,3 +11,6 @@ Link_Target = app.exe
 
 app:	$(Object_Files)
 	gcc $^ -o $(Link_Target)
+
+clean: 
+	rm *.o

@@ -3,3 +3,4 @@ void DIO_Write(void)
 {
 	printMessage();
 }
+

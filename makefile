@@ -5,14 +5,17 @@ DEP = ./Dependencies
 Object_Files = DIO.o LCD.o main.o bobpo-ekram-abdelkader-samir.o
 Clean_Target = DIO.o LCD.o main.o app.exe
 Dep_Files = .\Dependencies\DIO.d .\Dependencies\LCD.d .\Dependencies\main.d
-
 -include $(Dep_Files)
 
 %.o: %.c 
 	$(cc) -c -I$(INCLUDE_PATH) $<  -o $@
 	$(cc) -MM -I$(INCLUDE_PATH) $<  -o $(DEP)/$*.d
 
+
+compile : $(Object_Files)
 	
+
+
 	
 app.exe:	$(Object_Files)
 	$(cc) $^ -o $@
